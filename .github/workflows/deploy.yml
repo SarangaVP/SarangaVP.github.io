@@ -49,6 +49,9 @@ jobs:
       - name: Build with Next.js
         run: npm run build
 
+      - name: List files  
+        run: ls -la
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
