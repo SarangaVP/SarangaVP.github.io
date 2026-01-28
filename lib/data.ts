@@ -72,14 +72,14 @@ export const projects = [
     title: "Smart Waste Management System",
     description: "Automated sensor-based system for efficient waste collection and management, optimizing routes and monitoring fill levels in real-time.",
     technologies: ["IoT", "Sensors", "Arduino", "LabvIEW"],
-    github: "https://github.com/SarangaVP/smart-waste",
+    github: "https://github.com/SarangaVP/Smart-Waste-Management-System",
     image: "/images/projects/waste-management.jpg",
   },
   {
     title: "Automatic Pruning System",
     description: "Image processing and robotic simulation system for automated agricultural pruning, combining computer vision with robotic control.",
     technologies: ["MATLAB", "SOLIDWORKS", "Robotics", "Simulink"],
-    github: "https://github.com/SarangaVP/auto-pruning",
+    github: "https://github.com/SarangaVP/Automatic-Pruning-System",
     image: "/images/projects/pruning.jpg",
   },
   {
@@ -92,15 +92,15 @@ export const projects = [
   {
     title: "Quality Assurance System",
     description: "Enterprise-grade full-stack application for quality assurance and quality control processes, streamlining inspection workflows and reporting.",
-    technologies: ["React", "Node.js", "MongoDB", "Express.js"],
-    github: "https://github.com/SarangaVP/qa-system",
+    technologies: ["Java", "Spring Boot", "MongoDB", "React"],
+    github: "https://github.com/SarangaVP/companyA-backend",
     image: "/images/projects/qa-system.jpg",
   },
   {
     title: "SpamDetector",
     description: "Machine learning-based text classification system for spam detection, utilizing NLP techniques and various ML algorithms.",
     technologies: ["Python", "Streamlit", "Machine Learning"],
-    github: "https://github.com/SarangaVP/spam-detector",
+    github: "https://github.com/SarangaVP/Spam-Detector",
     image: "/images/projects/spam-detector.jpg",
   },
 ];
