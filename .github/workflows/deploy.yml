@@ -57,6 +57,9 @@ jobs:
         with:
           path: ./out
 
+      - name: List files  
+        run: ls -la
+
   # Deployment job
   deploy:
     environment:
