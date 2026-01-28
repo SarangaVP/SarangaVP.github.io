@@ -65,7 +65,7 @@ export const projects = [
     title: "DocuSense",
     description: "LLM-powered PDF Q&A web application that allows users to upload documents and ask questions, receiving intelligent answers powered by large language models.",
     technologies: ["LangChain", "LLMs", "Python", "Streamlit", "NLP"],
-    github: "https://github.com/SarangaVP/docusense",
+    github: "https://github.com/SarangaVP/DocuSense",
     image: "/images/projects/docusense.jpg",
   },
   {
