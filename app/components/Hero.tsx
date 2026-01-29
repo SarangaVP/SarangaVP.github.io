@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg pt-16"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0">
@@ -19,38 +19,31 @@ export default function Hero() {
         <div className="absolute inset-0 grid-pattern opacity-[0.03] dark:opacity-[0.05]" />
       </div>
 
-      <div className="relative z-10 container-custom text-center">
+      <div className="relative z-10 container-custom text-center px-4">
         {/* Content */}
-        <div className="space-y-8 animate-fade-in-up">
-          {/* Greeting with gradient */}
-          {/* <div className="inline-block">
-            <p className="text-sm md:text-base text-muted-foreground font-medium mb-4 animate-fade-in">
-              Hi, my name is
-            </p>
-          </div> */}
-
-          {/* Name with gradient */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
+        <div className="space-y-6 md:space-y-8 animate-fade-in-up">
+          {/* Name with gradient - Responsive sizing */}
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">
             <span className="block gradient-text">{personalInfo.name}</span>
           </h1>
 
-          {/* Title */}
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium max-w-3xl mx-auto">
+          {/* Title - Responsive sizing */}
+          <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl text-muted-foreground font-medium max-w-3xl mx-auto px-4">
             {personalInfo.title}
           </h2>
 
-          {/* Tagline */}
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">
+          {/* Tagline - Responsive sizing */}
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance px-4">
             {personalInfo.tagline}
           </p>
 
-          {/* CTA Buttons with gradient */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+          {/* CTA Buttons with gradient - Stack on mobile */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-6 md:pt-8 px-4">
             <Link
               href="#projects"
-              className="group relative px-8 py-4 bg-primary text-primary-foreground rounded-xl font-medium overflow-hidden hover-lift glow-effect"
+              className="group relative w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground rounded-xl font-medium overflow-hidden hover-lift glow-effect"
             >
-              <span className="relative z-10 flex items-center gap-2">
+              <span className="relative z-10 flex items-center justify-center gap-2">
                 View Projects
                 <svg
                   className="w-4 h-4 group-hover:translate-x-1 transition-transform"
@@ -72,21 +65,21 @@ export default function Hero() {
             <a
               href="/resume.pdf"
               download
-              className="px-8 py-4 border-2 border-primary text-primary rounded-xl font-medium transition-all hover-lift hover:bg-primary hover:text-primary-foreground"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-primary text-primary rounded-xl font-medium transition-all hover-lift hover:bg-primary hover:text-primary-foreground text-center"
             >
               Download CV
             </a>
 
             <Link
               href="#contact"
-              className="px-8 py-4 border border-border rounded-xl font-medium transition-all hover-lift hover:bg-secondary"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-border rounded-xl font-medium transition-all hover-lift hover:bg-secondary text-center"
             >
               Contact Me
             </Link>
           </div>
 
           {/* Scroll indicator - Simple Arrow */}
-          <div className="pt-16 animate-bounce">
+          <div className="pt-12 md:pt-16 animate-bounce">
             <Link href="#about" className="inline-block text-primary hover:text-accent transition-colors">
               <svg
                 className="w-8 h-8"
@@ -105,6 +98,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Add bottom padding on mobile for bottom nav */}
+      <div className="md:hidden h-20" />
     </section>
   );
 }

@@ -47,46 +47,50 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm"
+          ? "glass-card shadow-lg"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Logo - Just SM on mobile */}
           <Link
             href="#hero"
-            className="text-xl md:text-2xl font-bold font-heading tracking-tight hover:opacity-80 transition-opacity"
+            className="text-xl md:text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
           >
-            SM
+            <span className="gradient-text">SM</span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Hidden on mobile */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-foreground ${
+                className={`text-sm font-medium transition-colors relative group ${
                   activeSection === item.href.substring(1)
-                    ? "text-foreground"
-                    : "text-muted-foreground"
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {item.name}
+                {/* Active indicator */}
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all ${
+                  activeSection === item.href.substring(1) ? "w-full" : "w-0 group-hover:w-full"
+                }`} />
               </Link>
             ))}
           </div>
 
-          {/* Theme Toggle */}
+          {/* Theme Toggle - Always visible */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg hover:bg-secondary transition-colors"
+            className="p-2 rounded-lg hover:bg-gradient-to-br hover:from-primary/10 hover:to-accent/10 transition-all border border-transparent hover:border-primary/20"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? (
               <svg
-                className="w-5 h-5"
+                className="w-5 h-5 text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -100,7 +104,7 @@ export default function Navbar() {
               </svg>
             ) : (
               <svg
-                className="w-5 h-5"
+                className="w-5 h-5 text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -117,8 +121,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-lg">
+      {/* Mobile Navigation - Bottom sticky bar */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 border-t border-border/50 glass-card safe-area-bottom">
         <div className="px-4 py-3 flex justify-around">
           {navItems.map((item) => (
             <Link
@@ -126,7 +130,7 @@ export default function Navbar() {
               href={item.href}
               className={`text-xs font-medium transition-colors ${
                 activeSection === item.href.substring(1)
-                  ? "text-foreground"
+                  ? "text-primary"
                   : "text-muted-foreground"
               }`}
             >
