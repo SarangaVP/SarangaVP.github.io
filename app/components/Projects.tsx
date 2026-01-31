@@ -1,7 +1,6 @@
 "use client";
 
 import { projects } from "@/lib/data";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Projects() {
@@ -27,20 +26,6 @@ export default function Projects() {
                 className="group glass-card rounded-2xl overflow-hidden hover-lift glow-effect animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Project Image */}
-                <div className="relative aspect-video bg-linear-to-br from-primary/10 to-accent/10 overflow-hidden">
-                  <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/20 group-hover:opacity-0 transition-opacity duration-300 z-10" />
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-all duration-500"
-                  />
-                  
-                  {/* Overlay gradient on hover */}
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-                </div>
-
                 {/* Project Content */}
                 <div className="p-6 space-y-4">
                   {/* Title */}
@@ -49,25 +34,20 @@ export default function Projects() {
                   </h4>
 
                   {/* Description */}
-                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     {project.description}
                   </p>
 
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.slice(0, 3).map((tech, i) => (
+                    {project.technologies.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-2 py-1 text-xs font-medium rounded bg-linear-to-r from-primary/10 to-accent/10 text-foreground border border-primary/20"
+                        className="px-2 py-1 text-xs font-medium rounded bg-gradient-to-r from-primary/10 to-accent/10 text-foreground border border-primary/20"
                       >
                         {tech}
                       </span>
                     ))}
-                    {project.technologies.length > 3 && (
-                      <span className="px-2 py-1 text-xs font-medium rounded bg-secondary text-muted-foreground">
-                        +{project.technologies.length - 3}
-                      </span>
-                    )}
                   </div>
 
                   {/* GitHub Link */}

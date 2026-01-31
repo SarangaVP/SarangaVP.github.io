@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Saranga Malshan | Electrical Engineering & Software Development",
+  title: "Saranga Malshan - Portfolio",
   description: "Electrical Engineering undergraduate passionate about software development, machine learning, and building intelligent systems. Experienced in full-stack development and AI applications.",
   keywords: ["Saranga Malshan", "Electrical Engineering", "Software Engineer", "Machine Learning", "Full Stack Developer", "University of Moratuwa"],
   authors: [{ name: "Saranga Malshan" }],
