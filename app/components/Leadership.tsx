@@ -10,7 +10,7 @@ export default function Leadership() {
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold">
-              <span className="gradient-text">Leadership</span>
+              <span className="gradient-text">Leadership and Volunteering</span>
             </h2>
           </div>
 
@@ -41,7 +41,7 @@ export default function Leadership() {
                   </div>
 
                   {/* Title */}
-                  <h4 className="text-lg font-bold">
+                  <h4 className="text-lg font-bold gradient-text">
                     {role.title}
                   </h4>
 
