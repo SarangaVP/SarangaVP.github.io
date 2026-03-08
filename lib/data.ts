@@ -19,7 +19,12 @@ export const experience = [
     title: "Software and AI/ML Engineer Intern",
     company: "Jaseci Labs, USA",
     duration: "Dec 2024 - May 2025",
-    description: "Designed and implemented fine-tuning pipelines for Vision-Language Models with structured hyperparameter experiments and automated evaluation workflows. Developed full-stack features using React, TypeScript, Redux Toolkit, Jaclang, Jac Cloud and FastAPI. Built backend services, REST APIs, implemented unit tests with Jest, and configured GitHub Actions for CI/CD. Containerized applications with Docker and deployed with Kubernetes for orchestration and scaling.",
+    highlights: [
+      "Designed and implemented fine-tuning pipelines for Vision-Language Models with structured hyperparameter experiments and automated evaluation workflows for performance analysis.",
+      "Developed and integrated full-stack application features using React, TypeScript, and Redux Toolkit for frontend and Jaclang, Jac Cloud and FastAPI for backend.",
+      "Developed backend services and REST APIs, implemented backend unit tests, used Jest framework for frontend testing, and configured GitHub Actions pipelines to automate testing.",
+      "Containerized applications using Docker and deployed services with Kubernetes for orchestration and scaling."
+    ],
     technologies: ["React", "TypeScript", "Redux Toolkit", "FastAPI", "Jaclang", "Jac Cloud", "Docker", "Kubernetes", "VLMs", "GitHub Actions", "Jest"],
   },
 ];

@@ -43,10 +43,15 @@ export default function Experience() {
                     </div>
                   </div>
 
-                  {/* Description */}
-                  <p className="text-muted-foreground leading-relaxed">
-                    {exp.description}
-                  </p>
+                  {/* Description as bullet points */}
+                  <ul className="space-y-2 text-muted-foreground leading-relaxed">
+                    {exp.highlights.map((point, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-primary mt-1.5">•</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
 
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2 pt-2">
