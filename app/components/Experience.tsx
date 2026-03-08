@@ -9,12 +9,9 @@ export default function Experience() {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-sm font-medium text-primary mb-2">
-              Experience
+            <h2 className="text-3xl md:text-4xl font-bold">
+              <span className="gradient-text">Experience</span>
             </h2>
-            <h3 className="text-3xl md:text-4xl font-bold">
-              <span className="gradient-text">Where I've Worked</span>
-            </h3>
           </div>
 
           {/* Experience Cards */}

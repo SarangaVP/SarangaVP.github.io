@@ -9,12 +9,9 @@ export default function Education() {
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-sm font-medium text-primary mb-2">
-              Education
+            <h2 className="text-3xl md:text-4xl font-bold">
+              <span className="gradient-text">Education</span>
             </h2>
-            <h3 className="text-3xl md:text-4xl font-bold">
-              <span className="gradient-text">Academic Background</span>
-            </h3>
           </div>
 
           {/* Education Timeline */}

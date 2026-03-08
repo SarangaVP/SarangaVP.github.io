@@ -33,12 +33,9 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-sm font-medium text-primary mb-2">
-              Contact
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="gradient-text">Contact</span>
             </h2>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="gradient-text">Get In Touch</span>
-            </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto text-balance">
               I'm always open to discussing new projects, opportunities, or just having a chat about technology. Feel free to reach out!
             </p>
