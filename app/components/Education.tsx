@@ -25,7 +25,7 @@ export default function Education() {
                 {/* Header with degree and date */}
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                   <div className="flex-1">
-                    <h4 className="text-xl md:text-2xl font-bold mb-2">
+                    <h4 className="text-xl md:text-2xl font-bold mb-2 text-foreground">
                       {edu.degree}
                     </h4>
                     <p className="text-lg gradient-text font-semibold">
@@ -33,7 +33,7 @@ export default function Education() {
                     </p>
                   </div>
                   
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                  <div className="flex items-center gap-2 text-foreground">
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
@@ -44,18 +44,18 @@ export default function Education() {
                 {/* GPA or Result */}
                 {edu.gpa && (
                   <div className="mb-4">
-                    <p className="text-base">
-                      <span className="text-muted-foreground">GPA: </span>
-                      <span className="font-bold gradient-text text-lg">{edu.gpa}</span>
+                    <p className="text-base text-foreground">
+                      <span>GPA: </span>
+                      <span className="font-bold">{edu.gpa}</span>
                     </p>
                   </div>
                 )}
                 
                 {edu.result && (
                   <div className="mb-4">
-                    <p className="text-base">
-                      <span className="text-muted-foreground">Result: </span>
-                      <span className="font-bold gradient-text text-lg">{edu.result}</span>
+                    <p className="text-base text-foreground">
+                      <span>Result: </span>
+                      <span className="font-bold">{edu.result}</span>
                     </p>
                   </div>
                 )}

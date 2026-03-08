@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Saranga Malshan",
-  title: "Final Year Electrical Engineering Undergraduate - University of Moratuwa",
+  title: "Final Year Electrical Engineering Undergraduate",
   tagline: "Software Development | Machine Learning | Data Science",
   email: "sarangavp36@gmail.com",
   phone: "+94 718972175", 
@@ -10,7 +10,7 @@ export const personalInfo = {
 };
 
 export const about = {
-  summary: "I'm a final year Electrical Engineering undergraduate at the University of Moratuwa with a strong background in Machine Learning, Data Science, and Software Development. I specialize in building full-stack applications, designing ML pipelines, and deploying scalable systems. My experience spans from fine-tuning Vision-Language Models to developing production-ready applications with modern technologies like React, FastAPI, Docker, and Kubernetes.",
+  summary: "I'm a final year Electrical Engineering undergraduate at the University of Moratuwa with a strong background in Machine Learning, Data Science, and Software Development. I'm passionate about solving real-world problems through technology and innovation. I specialize in building full-stack applications, designing ML pipelines, and deploying scalable systems. My experience spans from research and development to building production-ready applications, always driven by curiosity and a commitment to delivering high-quality solutions.",
   image: "/profile.jpeg",
 };
 
@@ -51,7 +51,7 @@ export const education = [
     institution: "Royal College, Colombo 07",
     duration: "2018 - 2020",
     gpa: "", 
-    result: "3A's | Z-Score: 2.2357", 
+    result: "3A's | Z-Score: 2.2357 | Island Rank: 459", 
     honors: [], 
     coursework: ["Combined Mathematics", "Physics", "Chemistry"], 
   },
