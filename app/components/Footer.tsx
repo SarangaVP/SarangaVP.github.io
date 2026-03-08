@@ -14,9 +14,6 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground">
               © {currentYear} <span className="text-primary font-medium">{personalInfo.name}</span>. All rights reserved.
             </p>
-            <p className="text-xs text-muted-foreground mt-1">
-              Built with <span className="text-primary">Next.js</span> & <span className="text-accent">Tailwind CSS</span>
-            </p>
           </div>
 
           {/* Right: Social Links */}

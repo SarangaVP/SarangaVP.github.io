@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Saranga Malshan",
-  title: "Electrical Engineering Undergraduate | Software Engineer | ML Enthusiast",
-  tagline: "Building intelligent systems at the intersection of software, AI, and engineering",
+  title: "Final Year Electrical Engineering Undergraduate - University of Moratuwa",
+  tagline: "Software Development | Machine Learning | Data Science",
   email: "sarangavp36@gmail.com",
   phone: "+94 718972175", 
   github: "https://github.com/SarangaVP",
@@ -10,44 +10,44 @@ export const personalInfo = {
 };
 
 export const about = {
-  summary: "I'm an Electrical Engineering undergraduate at the University of Moratuwa with a passion for solving real-world problems through software and AI. I love building scalable systems, experimenting with machine learning models, and turning ideas into production-ready applications. My work spans from full-stack development to AI-powered solutions, always driven by curiosity and a commitment to quality.",
+  summary: "I'm a final year Electrical Engineering undergraduate at the University of Moratuwa with a strong background in Machine Learning, Data Science, and Software Development. I specialize in building full-stack applications, designing ML pipelines, and deploying scalable systems. My experience spans from fine-tuning Vision-Language Models to developing production-ready applications with modern technologies like React, FastAPI, Docker, and Kubernetes.",
   image: "/profile.jpeg",
 };
 
 export const experience = [
   {
-    title: "Software and Machine Learning Engineering Intern",
-    company: "Jaseci Labs",
-    duration: "6 Months",
-    description: "Worked on real-world software systems, contributing to backend and AI-related components. Gained hands-on experience with production-level code, teamwork, version control, and industry best practices for building scalable systems.",
-    technologies: ["Backend Development", "Frontend Development", "AI/ML", "Git"],
+    title: "Software and AI/ML Engineer Intern",
+    company: "Jaseci Labs, USA",
+    duration: "Dec 2024 - May 2025",
+    description: "Designed and implemented fine-tuning pipelines for Vision-Language Models with structured hyperparameter experiments and automated evaluation workflows. Developed full-stack features using React, TypeScript, Redux Toolkit, Jaclang, Jac Cloud and FastAPI. Built backend services, REST APIs, implemented unit tests with Jest, and configured GitHub Actions for CI/CD. Containerized applications with Docker and deployed with Kubernetes for orchestration and scaling.",
+    technologies: ["React", "TypeScript", "Redux Toolkit", "FastAPI", "Jaclang", "Jac Cloud", "Docker", "Kubernetes", "VLMs", "GitHub Actions", "Jest"],
   },
 ];
 
 export const education = [
   {
-    degree: "Bachelor of Science in Electrical Engineering",
+    degree: "Bachelor of Science in Electrical Engineering (Hons)",
     institution: "University of Moratuwa",
-    duration: "2022 - Present",
-    gpa: "3.59/4.00",
-    honors: ["Dean's List in Semester 4"], 
-    coursework: ["Data Structures and Algorithms", "Modular Software Development", "Intelligent Systems and Machine Learning", "Pattern Recognition", "Deep Learning for Vision", "Embedded Systems Design and Programming"], 
+    duration: "May 2022 - Present",
+    gpa: "3.59/4.00 (Up to Semester 7)",
+    honors: ["Dean's List - Semester 4"], 
+    coursework: ["Data Structures and Algorithms", "Pattern Recognition", "Modular Software Development", "Deep Learning for Vision", "Applied Statistics", "Embedded Systems Design and Programming", "Intelligent Systems and Machine Learning", "Industrial Network of Things"], 
   },
   {
     degree: "Bachelor of Information Technology (External)",
     institution: "University of Moratuwa",
-    duration: "2023 - Present",
-    gpa: "3.92/4.20",
-    honors: ["Dean's List in Semester 1"], 
-    coursework: ["Object Oriented Programming", "Data Structures and Algorithms", "Computer Networks & Operating Systems ", "Software Engineering", "Database Management Systems", "IT Quality Assurance"], 
+    duration: "Oct 2023 - Present",
+    gpa: "3.92/4.20 (Up to Level 2)",
+    honors: ["Completed up to Level 2 (Higher Diploma Level)"], 
+    coursework: ["Object Oriented Programming", "Data Structures and Algorithms", "Computer Networks and Operating Systems", "Software Engineering", "Database Management Systems", "IT Quality Assurance"], 
   },
   {
-    degree: "GCE Advanced Level - Physical Science Stream",
-    institution: "Royal College Colombo",
-    duration: "2020",
+    degree: "G.C.E. Advanced Level - Physical Science Stream",
+    institution: "Royal College, Colombo 07",
+    duration: "2018 - 2020",
     gpa: "", 
-    result: "3As", 
-    honors: ["Island Rank 459"], 
+    result: "3A's | Z-Score: 2.2357", 
+    honors: [], 
     coursework: ["Combined Mathematics", "Physics", "Chemistry"], 
   },
 ];

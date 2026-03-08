@@ -32,8 +32,8 @@ export default function Hero() {
             {personalInfo.title}
           </h2>
 
-          {/* Tagline - Responsive sizing */}
-          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance px-4">
+          {/* Tagline - Same size as title, nowrap to keep in one line */}
+          <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-muted-foreground font-medium max-w-full mx-auto px-4 whitespace-nowrap">
             {personalInfo.tagline}
           </p>
 
