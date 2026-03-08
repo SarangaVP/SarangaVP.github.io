@@ -58,11 +58,15 @@ export const education = [
 ];
 
 export const skills = {
-  "Programming Languages": ["Python", "Java", "JavaScript", "C#", "C++"],
-  "Web Development": ["React", "Node.js", "Express.js", "Spring Boot", "FastAPI", "PHP", "HTML", "CSS"],
-  "Machine Learning & AI": ["TensorFlow", "Pytorch", "Scikit-learn", "LangChain", "LLMs", "VLMs"],
-  "Databases": ["MongoDB", "SQL"],
-  "Tools & Technologies": ["Git", "GitHub", "MATLAB", "LabVIEW", "PSCAD"],
+  "Programming Languages": ["Python", "Java", "C#", "C++"],
+  "Web Stack": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Redux", "Node.js", "Express.js", "Spring Boot", "PHP", "FastAPI"],
+  "Database Systems": ["MongoDB", "MySQL"],
+  "AI/ML": ["TensorFlow", "PyTorch", "Keras", "Scikit-learn", "LangChain", "Hugging Face", "NumPy", "Pandas", "OpenCV"],
+  "DevOps": ["Docker", "Kubernetes"],
+  "Version Control": ["Git", "GitHub"],
+  "Other Tools": ["MATLAB", "MS Office", "Figma", "Canva", "Adobe Photoshop"],
+  // "Soft Skills": ["Problem Solving", "Communication", "Time Management", "Creativity", "Leadership", "Teamwork"],
+  // "Languages": ["Sinhala (Native)", "English (Professional)"],
 };
 
 export const projects = [
@@ -113,50 +117,71 @@ export const projects = [
 export const leadership = [
   {
     title: "Head of Publicity Committee",
-    organization: "IEEE NPSS Student Branch",
-    description: "Led publicity initiatives and managed communications for student branch activities and events.",
+    organization: "IEEE NPSS Student Branch UoM",
+    duration: "Jan 2024 - Jan 2025",
+    description: "Led event promotion, managed communications, and coordinated with other committees.",
+  },
+  {
+    title: "Web Developer",
+    organization: "Electrical Engineering Society (EESoc)",
+    duration: "Nov 2024 - Aug 2025",
+    description: "Contributed to development and maintenance of EESoc and EESpire Career Fair websites.",
   },
   {
     title: "Design Committee Member",
-    organization: "Electrical Engineering Society",
-    description: "Contributed to design and branding efforts for various society events and publications.",
+    organization: "Electrical Engineering Society (EESoc)",
+    duration: "Oct 2023 - Oct 2024",
+    description: "Designed program logos, contributed to magazine design, and created promotional materials.",
   },
   {
-    title: "Volunteer & Mentor",
-    organization: "OREPA",
-    description: "Actively participated in volunteering activities and mentored junior students in technical subjects.",
+    title: "Volunteer",
+    organization: "EXMO 2023",
+    duration: "July 2023",
+    description: "Contributed to the development of power system and hydro generation models.",
+  },
+  {
+    title: "General Member",
+    organization: "OREPA Student Chapter",
+    duration: "Nov 2021 - Present",
+    description: "Mentor for junior students in 'Mind Guides', Organizing committee member for Field Familiarization program.",
   },
 ];
 
 export const certifications = [
   {
     title: "Machine Learning Specialization",
-    issuer: "DeepLearning.AI",
-    date: "2023",
+    issuer: "DeepLearning.AI & Stanford University",
+    date: "",
+    credential: "#",
+  },
+  {
+    title: "Intermediate Machine Learning",
+    issuer: "Kaggle",
+    date: "",
+    credential: "#",
+  },
+  {
+    title: "AWS Cloud Practitioner Essentials",
+    issuer: "AWS",
+    date: "",
+    credential: "#",
+  },
+  {
+    title: "Programming with JavaScript",
+    issuer: "Meta",
+    date: "",
     credential: "#",
   },
   {
     title: "React Basics",
     issuer: "Meta",
-    date: "2023",
-    credential: "#",
-  },
-  {
-    title: "Advanced React",
-    issuer: "Meta",
-    date: "2023",
+    date: "",
     credential: "#",
   },
   {
     title: "Version Control",
     issuer: "Meta",
-    date: "2023",
-    credential: "#",
-  },
-  {
-    title: "JavaScript Programming",
-    issuer: "Meta",
-    date: "2023",
+    date: "",
     credential: "#",
   },
 ];

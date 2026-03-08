@@ -50,6 +50,11 @@ export default function Leadership() {
                     {role.organization}
                   </p>
 
+                  {/* Duration */}
+                  <p className="text-xs text-muted-foreground">
+                    {role.duration}
+                  </p>
+
                   {/* Description */}
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {role.description}
