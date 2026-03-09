@@ -9,12 +9,9 @@ export default function Skills() {
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-sm font-medium text-primary mb-2">
-              Skills
+            <h2 className="text-3xl md:text-4xl font-bold">
+              <span className="gradient-text">Skills</span>
             </h2>
-            <h3 className="text-3xl md:text-4xl font-bold">
-              <span className="gradient-text">Technical Expertise</span>
-            </h3>
           </div>
 
           {/* Skills Grid */}
