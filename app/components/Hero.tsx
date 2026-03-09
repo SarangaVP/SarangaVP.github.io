@@ -39,29 +39,6 @@ export default function Hero() {
 
           {/* CTA Buttons with gradient - Stack on mobile */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-6 md:pt-8 px-4">
-            <Link
-              href="#projects"
-              className="group relative w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground rounded-xl font-medium overflow-hidden hover-lift glow-effect"
-            >
-              <span className="relative z-10 flex items-center justify-center gap-2">
-                View Projects
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity" />
-            </Link>
-
             <a
               href="/Saranga_Malshan_CV.pdf"
               target="_blank"
