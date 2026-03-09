@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Saranga Malshan",
-  title: "Final Year Electrical Engineering Undergraduate",
+  title: "Final Year Electrical Engineering Undergraduate - University of Moratuwa",
   tagline: "Software Development | Machine Learning | Data Science",
   email: "sarangavp36@gmail.com",
-  phone: "+94 718972175", 
+  phone: "+94 71 897 2175", 
   github: "https://github.com/SarangaVP",
   linkedin: "https://www.linkedin.com/in/saranga-malshan-56586b213/",
   location: "Colombo, Sri Lanka",

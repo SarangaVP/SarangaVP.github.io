@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { useTheme } from "../ThemeProvider";
 
 const navItems = [
@@ -48,6 +47,22 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Smooth scroll to section
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      const navHeight = 80; // Account for fixed navbar
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - navHeight,
+        behavior: "smooth"
+      });
+    }
+    setMobileMenuOpen(false);
+  };
+
   // Close mobile menu when clicking a link
   const handleNavClick = () => {
     setMobileMenuOpen(false);
@@ -63,19 +78,21 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link
+            <a
               href="#hero"
+              onClick={(e) => scrollToSection(e, "#hero")}
               className="text-xl md:text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
             >
               <span className="gradient-text">SM</span>
-            </Link>
+            </a>
 
             {/* Desktop Navigation - Hidden on mobile/tablet */}
             <div className="hidden lg:flex items-center gap-8">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.name}
                   href={item.href}
+                  onClick={(e) => scrollToSection(e, item.href)}
                   className={`text-sm font-medium transition-colors relative group ${
                     activeSection === item.href.substring(1)
                       ? "text-primary"
@@ -91,7 +108,7 @@ export default function Navbar() {
                         : "w-0 group-hover:w-full"
                     }`}
                   />
-                </Link>
+                </a>
               ))}
             </div>
 
@@ -191,10 +208,10 @@ export default function Navbar() {
       >
         <div className="p-4 space-y-1">
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.name}
               href={item.href}
-              onClick={handleNavClick}
+              onClick={(e) => scrollToSection(e, item.href)}
               className={`block px-4 py-3 rounded-xl text-sm font-medium transition-all ${
                 activeSection === item.href.substring(1)
                   ? "bg-gradient-to-r from-primary/20 to-accent/20 text-primary border border-primary/30"
@@ -202,7 +219,7 @@ export default function Navbar() {
               }`}
             >
               {item.name}
-            </Link>
+            </a>
           ))}
         </div>
       </div>
