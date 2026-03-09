@@ -19,7 +19,7 @@ export default function Education() {
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="glass-card p-8 rounded-2xl hover-lift animate-fade-in-up"
+                className="glass-card p-8 rounded-2xl hover-lift glow-effect animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Header with degree and date */}

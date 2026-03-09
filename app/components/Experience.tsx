@@ -22,11 +22,6 @@ export default function Experience() {
                 className="glass-card p-8 rounded-2xl hover-lift glow-effect animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Timeline dot with gradient */}
-                <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-linear-to-br from-primary to-accent hidden md:flex items-center justify-center shadow-lg">
-                  <div className="w-3 h-3 rounded-full bg-background" />
-                </div>
-
                 <div className="space-y-4">
                   {/* Header */}
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
@@ -46,8 +41,8 @@ export default function Experience() {
                   {/* Description as bullet points */}
                   <ul className="space-y-2 text-muted-foreground leading-relaxed">
                     {exp.highlights.map((point, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-primary mt-1.5">•</span>
+                      <li key={i} className="flex items-baseline gap-2">
+                        <span className="text-primary">•</span>
                         <span>{point}</span>
                       </li>
                     ))}
