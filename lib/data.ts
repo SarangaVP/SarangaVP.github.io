@@ -25,7 +25,7 @@ export const experience = [
       "Developed backend services and REST APIs, implemented backend unit tests, used Jest framework for frontend testing, and configured GitHub Actions pipelines to automate testing.",
       "Containerized applications using Docker and deployed services with Kubernetes for orchestration and scaling."
     ],
-    technologies: ["React", "TypeScript", "Redux Toolkit", "FastAPI", "Jaclang", "Jac Cloud", "Docker", "Kubernetes", "VLMs", "GitHub Actions", "Jest"],
+    technologies: ["React", "TypeScript", "Redux Toolkit", "FastAPI", "Jaclang", "Jac Cloud", "Python", "PyTorch", "VLMs", "Docker", "Kubernetes",  "GitHub Actions", "Jest"],
   },
 ];
 
@@ -88,35 +88,39 @@ export const projects = [
     title: "Quality Assurance and Quality Control System",
     description: "A full-stack web application designed to manage quality assurance and quality control processes in an electronic equipment manufacturing company.",
     technologies: ["React", "JavaScript", "Java", "Spring Boot", "MongoDB", "REST APIs"],
-    github: "https://github.com/SarangaVP/companyA-backend",
+    github: "",
+    githubLinks: [
+      { label: "Frontend", url: "https://github.com/SarangaVP/companyA-frontend" },
+      { label: "Backend", url: "https://github.com/SarangaVP/companyA-backend" },
+    ],
     image: "/images/projects/qa-system.jpg",
   },
   {
     title: "Review Sentiment Analysis Tool",
     description: "A sentiment analysis tool that scrapes customer reviews, evaluates their sentiments using a BERT model, and visualizes the results.",
     technologies: ["Python", "PyTorch", "Transformers", "BeautifulSoup", "Pandas", "Matplotlib"],
-    github: "https://github.com/SarangaVP",
+    github: "https://github.com/SarangaVP/Sentiment-Analysis",
     image: "/images/projects/sentiment-analysis.jpg",
   },
   {
     title: "XFeat: Accelerated Features for Lightweight Image Matching",
     description: "Reimplemented CVPR 2024 XFeat paper and extended it for video processing, enabling lightweight feature matching across video frames.",
     technologies: ["Python", "Computer Vision", "OpenCV", "Feature Matching", "Research"],
-    github: "https://github.com/SarangaVP",
+    github: "https://github.com/SarangaVP/accelerated_features",
     image: "/images/projects/xfeat.jpg",
   },
   {
     title: "Machine Learning and Deep Learning Projects",
     description: "A collection of Machine Learning and Deep Learning projects showcasing various algorithms and techniques.",
     technologies: ["Python", "Scikit-learn", "TensorFlow", "Pandas", "NumPy", "Matplotlib"],
-    github: "https://github.com/SarangaVP",
+    github: "https://github.com/SarangaVP/ML-Mini-Projects",
     image: "/images/projects/ml-projects.jpg",
   },
   {
     title: "Autonomous Maze Solving Robot",
     description: "A maze solving robot using multiple navigation strategies including DFS, flood fill, wall following, and line following. Won first place in module competition.",
     technologies: ["C++", "Embedded Systems", "Path Planning", "Control Algorithms"],
-    github: "https://github.com/SarangaVP",
+    github: "https://github.com/SarangaVP/MazeSolver_Group03",
     image: "/images/projects/maze-robot.jpg",
   },
   {
@@ -130,14 +134,14 @@ export const projects = [
     title: "Hotel Reservation and Management Application",
     description: "A full-stack web system for managing hotel operations including room bookings, guest check-ins, and feedback, featuring a responsive interface and efficient backend.",
     technologies: ["PHP", "CSS", "JavaScript", "Bootstrap", "MySQL"],
-    github: "https://github.com/SarangaVP",
+    github: "https://github.com/SarangaVP/Hotel-Management-System",
     image: "/images/projects/hotel-management.jpg",
   },
   {
     title: "Car Rental Platform",
     description: "A desktop application for car rental operations including user registration, vehicle management, availability tracking, booking, and revenue management.",
     technologies: ["C#", ".NET", "SQL Server"],
-    github: "https://github.com/SarangaVP",
+    github: "https://github.com/SarangaVP/CarRentalSystem",
     image: "/images/projects/car-rental.jpg",
   },
   {
