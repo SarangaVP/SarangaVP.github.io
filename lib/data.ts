@@ -59,9 +59,9 @@ export const education = [
 
 export const skills = {
   "Programming Languages": ["Python", "Java", "C#", "C++"],
-  "Web Stack": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Redux", "Node.js", "Express.js", "Spring Boot", "PHP", "FastAPI"],
+  "Web Stack": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Redux", "Node.js", "Express.js", "Spring Boot", "PHP", "FastAPI"],
   "Database Systems": ["MongoDB", "MySQL"],
-  "AI/ML": ["TensorFlow", "PyTorch", "Keras", "Scikit-learn", "LangChain", "Hugging Face", "NumPy", "Pandas", "OpenCV"],
+  "AI/ML": ["TensorFlow", "PyTorch", "Keras", "Scikit-learn", "LangChain", "Hugging Face", "NumPy", "Pandas", "Matplotlib", "OpenCV"],
   "DevOps": ["Docker", "Kubernetes"],
   "Version Control": ["Git", "GitHub"],
   "Other Tools": ["MATLAB", "MS Office", "Figma", "Canva", "Adobe Photoshop"],
