@@ -41,12 +41,12 @@ export default function Hero() {
           </h1>
 
           {/* Title - Responsive sizing */}
-          <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl text-muted-foreground font-medium max-w-3xl mx-auto px-4">
+          <h2 className="text-sm sm:text-lg md:text-2xl lg:text-3xl text-muted-foreground font-medium max-w-3xl mx-auto px-4">
             {personalInfo.title}
           </h2>
 
-          {/* Tagline - Same size as title, nowrap to keep in one line */}
-          <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-muted-foreground font-medium max-w-full mx-auto px-4 whitespace-nowrap">
+          {/* Tagline - Wrap on mobile */}
+          <p className="text-sm sm:text-lg md:text-2xl lg:text-3xl text-muted-foreground font-medium max-w-full mx-auto px-4 sm:whitespace-nowrap">
             {personalInfo.tagline}
           </p>
 
