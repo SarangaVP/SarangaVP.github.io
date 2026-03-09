@@ -63,8 +63,9 @@ export default function Hero() {
             </Link>
 
             <a
-              href="/resume.pdf"
-              download
+              href="/Saranga_Malshan_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-primary text-primary rounded-xl font-medium transition-all hover-lift hover:bg-primary hover:text-primary-foreground text-center"
             >
               Download CV

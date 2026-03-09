@@ -19,12 +19,12 @@ export default function Certifications() {
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="glass-card p-5 rounded-xl hover-lift border border-primary/10 hover:border-primary/30 transition-all animate-fade-in-up"
+                className="glass-card p-5 rounded-xl hover-lift glow-effect border border-primary/10 hover:border-primary/30 transition-all animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <div className="space-y-2">
+                <div className="flex items-start gap-3">
                   {/* Certificate Icon with gradient */}
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center border border-primary/20">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center border border-primary/20 shrink-0">
                     <svg
                       className="w-5 h-5 text-primary"
                       fill="none"
@@ -40,15 +40,18 @@ export default function Certifications() {
                     </svg>
                   </div>
 
-                  {/* Title */}
-                  <h4 className="font-bold text-sm leading-tight">
-                    {cert.title}
-                  </h4>
+                  {/* Content */}
+                  <div className="flex-1 min-w-0">
+                    {/* Title */}
+                    <h4 className="font-bold text-sm leading-tight mb-1">
+                      {cert.title}
+                    </h4>
 
-                  {/* Issuer & Date */}
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="font-medium text-primary">{cert.issuer}</span>
-                    <span className="text-muted-foreground">{cert.date}</span>
+                    {/* Issuer & Date */}
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-medium text-primary">{cert.issuer}</span>
+                      <span className="text-muted-foreground">{cert.date}</span>
+                    </div>
                   </div>
                 </div>
               </div>
